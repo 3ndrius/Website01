@@ -1,0 +1,13 @@
+body{
+    font-weight: $main-font-weight;
+    font-family: $main-font-family;
+    color:$font-color;
+}
+.full-container{
+    background-image: url('/images/header.jpg');
+    background-size:cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-position: center;
+    
+}

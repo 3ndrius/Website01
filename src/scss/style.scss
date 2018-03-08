@@ -1,9 +1,7 @@
 
+@import "normalize";
 @import 'modules/_all';
-@import 'partials/all';
+
+@import 'partials/_all';
 
 
-body {
-    background: $bg-color;
-    color:$color;
-}

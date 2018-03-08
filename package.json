@@ -1,7 +1,7 @@
 {
-  "name": "sass_starter_pack",
+  "name": "mountainPage",
   "version": "1.0.0",
-  "description": "Starter pack using gulp",
+  "description": "Page using gulp",
   "main": "index.js",
   "scripts": {
     "start": "gulp"
@@ -11,6 +11,10 @@
   "devDependencies": {
     "browser-sync": "^2.18.13",
     "gulp": "^3.9.1",
-    "gulp-sass": "^3.1.0"
+    "gulp-sass": "^3.1.0",
+    "node-normalize-scss": "^3.0.0"
+  },
+  "dependencies": {
+    "normalize.css": "^8.0.0"
   }
 }
