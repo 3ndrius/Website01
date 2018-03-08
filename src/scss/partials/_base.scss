@@ -2,12 +2,27 @@ body{
     font-weight: $main-font-weight;
     font-family: $main-font-family;
     color:$font-color;
+    font-size:$myf-size;
 }
 .full-container{
     background-image: url('/images/header.jpg');
     background-size:cover;
     background-repeat: no-repeat;
-    height: 100vh;
+    height: 150vh;
     background-position: center;
     
+}
+
+.button{
+    padding:.6em 1.2em;
+    background-color: $btn-color;
+    border-radius:36px;
+    border:none;
+    color:$font-color;
+
+   &:hover{
+    background-color: $font-color;
+    color:$btn-color;
+    cursor:pointer;
+   }
 }

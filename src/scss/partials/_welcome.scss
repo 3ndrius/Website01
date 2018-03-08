@@ -1,0 +1,29 @@
+.welcome{
+    
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 2em;
+    
+    
+
+    .welcome-header{
+        text-transform: uppercase;
+        text-align: center;
+        max-width: 90%;
+    
+
+    }
+    .welcome-desc{
+        font-weight:$second-fw;
+        line-height: $line-h;
+        text-align: center;
+        max-width: 90%;
+    }
+    i{
+        padding-right: 10px;
+    }
+
+    
+}

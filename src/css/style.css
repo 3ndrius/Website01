@@ -7,6 +7,7 @@
  *    IE on Windows Phone and in iOS.
  */
 @import url("https://fonts.googleapis.com/css?family=Lato|Oswald:200|Roboto:300,400,700");
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css);
 html {
   line-height: 1.15;
   /* 1 */
@@ -392,16 +393,61 @@ template {
 
 body {
   font-weight: 400;
-  font-family: "Roboto", sans-serif;
-  color: #ffffff; }
+  font-family: "Roboto", "arial", sans-serif;
+  color: #ffffff;
+  font-size: 18px; }
 
 .full-container {
   background-image: url("/images/header.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  height: 100vh;
+  height: 150vh;
   background-position: center; }
 
+.button {
+  padding: .6em 1.2em;
+  background-color: #25365d;
+  border-radius: 36px;
+  border: none;
+  color: #ffffff; }
+  .button:hover {
+    background-color: #ffffff;
+    color: #25365d;
+    cursor: pointer; }
+
 #header {
+  margin: 0 2em; }
+
+#header .header-navbar {
   display: flex;
-  flex-direction: row; }
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center; }
+
+.navigation-items {
+  display: block; }
+  .navigation-items li {
+    display: inline-block;
+    margin-right: 10px; }
+  .navigation-items .active {
+    border: 1px solid #f7f9fb;
+    padding: .6em;
+    border-radius: 36px; }
+
+.welcome {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 2em; }
+  .welcome .welcome-header {
+    text-transform: uppercase;
+    text-align: center;
+    max-width: 90%; }
+  .welcome .welcome-desc {
+    font-weight: 300;
+    line-height: 1.5em;
+    text-align: center;
+    max-width: 90%; }
+  .welcome i {
+    padding-right: 10px; }
