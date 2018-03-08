@@ -397,7 +397,7 @@ body {
   color: #ffffff;
   font-size: 18px; }
 
-.full-container {
+.header-container {
   background-image: url("/images/header.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -416,7 +416,7 @@ body {
     cursor: pointer; }
 
 #header {
-  margin: 0 2em; }
+  margin: 0 5em; }
 
 #header .header-navbar {
   display: flex;
@@ -437,9 +437,10 @@ body {
 .welcome {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   flex-direction: column;
-  padding: 2em; }
+  padding: 2em;
+  height: 100vh; }
   .welcome .welcome-header {
     text-transform: uppercase;
     text-align: center;
