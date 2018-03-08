@@ -401,8 +401,9 @@ body {
   background-image: url("/images/header.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  height: 150vh;
-  background-position: center; }
+  height: 1200px;
+  background-position: center;
+  margin-bottom: 100px; }
 
 .button {
   padding: .6em 1.2em;
@@ -440,7 +441,7 @@ body {
   justify-content: flex-start;
   flex-direction: column;
   padding: 2em;
-  height: 100vh; }
+  height: 660px; }
   .welcome .welcome-header {
     text-transform: uppercase;
     text-align: center;
@@ -452,3 +453,76 @@ body {
     max-width: 90%; }
   .welcome i {
     padding-right: 10px; }
+
+.download {
+  position: relative; }
+
+.big-desc {
+  font-size: 5.5em;
+  font-weight: 700;
+  margin-left: 1em;
+  padding-top: 10px; }
+
+.download-wrap {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  top: 3em;
+  padding: 0 4em; }
+
+.wrap-desc {
+  padding: 0;
+  max-width: 40%;
+  margin-left: 4em; }
+
+.download-h1 {
+  color: #25365d;
+  display: block; }
+
+.download-p {
+  color: #25365d;
+  text-align: justify; }
+
+.download-list {
+  color: #25365d;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  padding-bottom: 1em; }
+  .download-list i {
+    color: #ff2868; }
+
+.image-laptop {
+  max-width: 60%; }
+  .image-laptop img {
+    max-height: auto;
+    max-width: 100%;
+    background-position: center; }
+
+@media (max-width: 968px) {
+  .download-wrap {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    top: 2em;
+    padding: 0 1em; }
+  .big-desc {
+    font-size: 4.5em;
+    font-weight: 700;
+    margin-left: 0.5em;
+    padding-top: 10px; }
+  .image-laptop {
+    overflow: hidden; }
+    .image-laptop img {
+      max-height: 100%;
+      max-width: auto;
+      padding-top: 0.3em;
+      background-size: cover; }
+  .wrap-desc {
+    font-size: 17px;
+    padding: 0;
+    max-width: 40%;
+    margin-left: 2em; } }
+
+.info {
+  background-color: #f7f9fb; }
