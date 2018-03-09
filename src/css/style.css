@@ -7,7 +7,6 @@
  *    IE on Windows Phone and in iOS.
  */
 @import url("https://fonts.googleapis.com/css?family=Lato|Oswald:200|Roboto:300,400,700");
-@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css);
 html {
   line-height: 1.15;
   /* 1 */
@@ -587,4 +586,29 @@ body {
     margin-left: 0.5em; } }
 
 .info {
-  background-color: #f7f9fb; }
+  background-color: #f7f9fb;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr 2fr 1fr 2fr;
+  grid-template-rows: 1fr 1fr;
+  padding: 4em;
+  grid-gap: .4em;
+  font-size: .8em;
+  font-weight: 300; }
+  .info i {
+    color: #25365d;
+    opacity: 0.9; }
+
+.item h2 {
+  color: #25365d;
+  text-transform: uppercase;
+  padding-top: 0;
+  margin-top: 0;
+  font-weight: 400;
+  opacity: 0.98; }
+
+.item p {
+  color: #5a5a5a;
+  opacity: 0.8; }
+
+.item-image {
+  text-align: center; }
