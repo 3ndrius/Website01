@@ -1,6 +1,10 @@
 .feature{
     color:$btn-color;
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
     h1{
         text-align: center;
         margin-top: 2em;
@@ -14,9 +18,10 @@
 .feature-wrap{
     
     display:grid;
-    grid-template-columns: 1fr minmax(100px, 411px) minmax(100px, 411px) 1fr;
+    grid-template-columns: minmax(50px, 200px) minmax(100px, 411px) minmax(100px, 411px) minmax(50px, 200px);
     grid-template-rows: 1fr 1fr;
     padding: 3em;
+    
     
 
 }

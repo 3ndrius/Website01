@@ -1,0 +1,65 @@
+.plans{
+   background-color: $bg-section-color;
+   color:$second-font-color;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   padding: 0 2em;
+   p{
+    font-weight: $second-fw;
+    font-size: 1em;
+    opacity: 0.9;
+}
+}
+.plans-header{
+
+    text-align: center;
+    padding: 4em 2em;
+    h1{
+        color:$btn-color;
+        text-align: center;
+    }
+    p{
+        font-weight: $second-fw;
+        font-size: 1em;
+        opacity: 0.8;
+    }
+}
+
+.plans-items{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1em;
+
+    .item{
+        background-color: $font-color;
+        padding: 0 2em 1em 2em;
+        text-align: center;
+
+        span{
+            color:$btn-color;
+            font-size: 2em;
+            font-weight:$big-f;
+        }
+    }
+}
+.plans-footer{
+    text-align: center;
+    padding: 2em 5em;
+    
+
+    h2,h4{
+        color:$btn-color;
+    }
+}
+.plans-contact{
+    display: flex;
+    h3{
+        padding: 0 1em;
+        color:$btn-color;
+    i{
+        margin: 4px;
+      }
+    }
+    
+}
