@@ -7,6 +7,13 @@ body{
         font-family:$second-ff;
         font-weight:$second-fw;
         opacity: .9;
+        line-height: $line-heigh;
+        
+    }
+    h1{
+        font-family: $special-ff;
+        text-transform: uppercase;
+        
     }
 }
 .full-container{

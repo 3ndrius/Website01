@@ -6,7 +6,7 @@
  * 2. Prevent adjustments of font size after orientation changes in
  *    IE on Windows Phone and in iOS.
  */
-@import url("https://fonts.googleapis.com/css?family=Lato:300,400|Raleway:400,700|Roboto:300,400,700");
+@import url("https://fonts.googleapis.com/css?family=Lato:300|Raleway:400,700|Roboto:300,400,700");
 html {
   line-height: 1.15;
   /* 1 */
@@ -398,7 +398,11 @@ body {
   body p {
     font-family: "Lato", "arial", sans-serif;
     font-weight: 300;
-    opacity: .9; }
+    opacity: .9;
+    line-height: 1.4em; }
+  body h1 {
+    font-family: "Raleway", "arial";
+    text-transform: uppercase; }
 
 .full-container {
   max-width: 1920px;
@@ -748,7 +752,7 @@ body {
 
 @media (max-width: 568px) {
   body {
-    font-size: 13px; }
+    font-size: 14px; }
   .welcome-header {
     padding-top: 2em; }
   .big-desc {
@@ -758,7 +762,7 @@ body {
   .image-laptop {
     display: none; }
   .wrap-desc {
-    font-size: 1.5em;
+    font-size: 1.22em;
     max-width: 80%;
     padding: 0 1em; }
   .feature-wrap {
@@ -774,6 +778,8 @@ body {
     font-weight: 300; }
   .plans-items .item {
     padding: 0; }
+    .plans-items .item p {
+      padding: .2em; }
   .plans-contact {
     flex-direction: column; }
   .contact {
@@ -783,7 +789,7 @@ body {
   .feature-wrap {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr minmax(100px 200px) 1fr;
+    grid-template-rows: 1fr minmax(300px 400px) 1fr;
     padding: 1em; }
   .item2 {
     grid-column-start: 1;
