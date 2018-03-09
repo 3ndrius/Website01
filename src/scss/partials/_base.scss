@@ -35,8 +35,9 @@ body{
     padding:.6em 1.2em;
     background-color: $btn-color;
     border-radius:36px;
-    border:none;
+    border:1px solid $btn-color;
     color:$font-color;
+    transition:all ease 0.8s;
     
 
    &:hover{
@@ -45,7 +46,55 @@ body{
     cursor:pointer;
     border:1px solid $btn-color;
    }
+
 }
+.menu-hamburger{
+    position: absolute;
+    top:22px;
+    left:30px;
+    height: 50px;
+    width: 50px;
+    z-index: 100;
+    display:none;
+
+    .hamburger-wrap{
+        position: relative;
+        
+
+        .line{
+            height: $h;
+            width: 100%;
+            background-color: $font-color;
+            position: absolute;
+            top:0;
+            left:0;
+
+            &::before{
+                content: ' ';
+                position:absolute;
+                top:13px;
+                left:0;
+                height: $h;
+                width:100%;
+            background-color: $font-color;
+
+           
+            }
+        &::after{
+                content: ' ';
+                position:absolute;
+                top:26px;
+                left:0;
+                height: $h;
+                width:100%;
+            background-color: $font-color;
+
+           
+            }
+        }
+    }
+}
+
 
 
 

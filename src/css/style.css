@@ -421,13 +421,48 @@ body {
   padding: .6em 1.2em;
   background-color: #25365d;
   border-radius: 36px;
-  border: none;
-  color: #ffffff; }
+  border: 1px solid #25365d;
+  color: #ffffff;
+  transition: all ease 0.8s; }
   .button:hover {
     background-color: #ffffff;
     color: #25365d;
     cursor: pointer;
     border: 1px solid #25365d; }
+
+.menu-hamburger {
+  position: absolute;
+  top: 22px;
+  left: 30px;
+  height: 50px;
+  width: 50px;
+  z-index: 100;
+  display: none; }
+  .menu-hamburger .hamburger-wrap {
+    position: relative; }
+    .menu-hamburger .hamburger-wrap .line {
+      height: 0.3em;
+      width: 100%;
+      background-color: #ffffff;
+      position: absolute;
+      top: 0;
+      left: 0; }
+      .menu-hamburger .hamburger-wrap .line::before {
+        content: ' ';
+        position: absolute;
+        top: 13px;
+        left: 0;
+        height: 0.3em;
+        width: 100%;
+        background-color: #ffffff; }
+      .menu-hamburger .hamburger-wrap .line::after {
+        content: ' ';
+        position: absolute;
+        top: 26px;
+        left: 0;
+        height: 0.3em;
+        width: 100%;
+        background-color: #ffffff; }
 
 #header {
   margin: 0 5em; }
@@ -446,7 +481,8 @@ body {
   .navigation-items .active {
     border: 1px solid #f7f9fb;
     padding: .6em;
-    border-radius: 36px; }
+    border-radius: 36px;
+    transition: all ease 0.8s; }
     .navigation-items .active:hover {
       color: #25365d;
       border-color: #25365d;
@@ -506,8 +542,7 @@ body {
   display: block; }
 
 .download-p {
-  color: #25365d;
-  text-align: justify; }
+  color: #25365d; }
 
 .download-list {
   color: #25365d;
@@ -629,6 +664,7 @@ body {
     padding: 0 2em 1em 2em;
     text-align: center;
     transform: scale(0.94);
+    transition: all ease-in-out 1s;
     -webkit-box-shadow: 0px 2px 42px 0px rgba(37, 54, 93, 0.47);
     -moz-box-shadow: 0px 2px 42px 0px rgba(37, 54, 93, 0.47);
     box-shadow: 0px 2px 42px 0px rgba(37, 54, 93, 0.47); }
@@ -729,6 +765,8 @@ body {
 @media (max-width: 768px) {
   body {
     font-size: 15px; }
+  .menu-hamburger {
+    display: block; }
   .welcome-header {
     padding-top: 2em; }
   .header-container {
@@ -736,8 +774,15 @@ body {
     background-repeat: no-repeat;
     height: 880px;
     background-position: center; }
-  #header {
+  .navigation-items {
     display: none; }
+  .header-navbar img {
+    position: absolute;
+    top: 20px;
+    right: 0;
+    left: 0;
+    margin-left: auto;
+    margin-right: auto; }
   .download-wrap {
     padding: 1em;
     font-size: 0.8em; }
