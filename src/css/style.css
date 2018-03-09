@@ -416,6 +416,17 @@ body {
     color: #25365d;
     cursor: pointer; }
 
+@media (max-width: 768px) {
+  .header-container {
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 1000px;
+    background-position: center; }
+  #header {
+    display: none; }
+  .download {
+    margin-top: 50px; } }
+
 #header {
   margin: 0 5em; }
 
@@ -453,6 +464,15 @@ body {
     max-width: 90%; }
   .welcome i {
     padding-right: 10px; }
+
+@media (max-width: 768px) {
+  .welcome {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 2em;
+    height: 550px; } }
 
 .download {
   position: relative; }
@@ -523,6 +543,48 @@ body {
     padding: 0;
     max-width: 40%;
     margin-left: 2em; } }
+
+@media (max-width: 768px) {
+  .download-wrap {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    top: 2em;
+    padding: 0 1em; }
+  .big-desc {
+    font-size: 3.7em;
+    font-weight: 700;
+    margin-left: 0.5em; }
+  .image-laptop {
+    overflow: hidden; }
+    .image-laptop img {
+      max-height: 100%;
+      max-width: auto;
+      padding-top: 0.3em;
+      background-size: cover; }
+  .wrap-desc {
+    padding: 0;
+    max-width: 40%;
+    margin-left: 1em;
+    font-size: 15px; } }
+
+@media (max-width: 578px) {
+  .download-wrap {
+    position: absolute;
+    display: block;
+    justify-content: space-between;
+    top: 0.6em;
+    padding: 0 1em; }
+  .wrap-desc {
+    padding: 0;
+    max-width: 95%;
+    font-size: 17px; }
+  .image-laptop {
+    display: none; }
+  .big-desc {
+    font-size: 2.4em;
+    font-weight: 700;
+    margin-left: 0.5em; } }
 
 .info {
   background-color: #f7f9fb; }

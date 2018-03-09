@@ -95,3 +95,74 @@
     }
 
 }
+@media (max-width: 768px) {
+
+
+    .download-wrap{
+        position: absolute;
+        display: flex;
+        justify-content: space-between;
+        top:2em;
+        padding:0 1em;
+        
+    }
+    .big-desc{
+        font-size:3.7em;
+        font-weight: $big-f;
+        margin-left: 0.5em;
+        
+       
+    }
+    .image-laptop{
+      
+        overflow: hidden;
+        img{
+            max-height: 100%;
+            max-width: auto;
+            padding-top: 0.3em;
+            background-size: cover;
+        }
+    }
+
+    .wrap-desc{
+        
+        padding: 0;
+        max-width:40%;
+        margin-left: 1em;
+        font-size:15px;
+    
+    }
+
+}
+@media (max-width: 578px) {
+
+    .download-wrap{
+        position: absolute;
+        display: block;
+        justify-content: space-between;
+        top:0.6em;
+        padding:0 1em;
+
+    }
+
+    .wrap-desc{
+        
+        padding: 0;
+        max-width:95%;
+        font-size:17px
+     
+        
+    
+    }
+    .image-laptop{
+        display: none;
+    }
+
+    .big-desc{
+        font-size:2.4em;
+        font-weight: $big-f;
+        margin-left: 0.5em;
+        
+       
+    }
+}
