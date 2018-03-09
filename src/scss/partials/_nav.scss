@@ -24,6 +24,12 @@
        border: 1px solid $bg-section-color;
        padding:.6em;
        border-radius:36px;
+
+    &:hover{
+        color:$btn-color;
+        border-color:$btn-color;
+        cursor:pointer;
+    }
    }
 
 }

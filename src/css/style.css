@@ -6,7 +6,7 @@
  * 2. Prevent adjustments of font size after orientation changes in
  *    IE on Windows Phone and in iOS.
  */
-@import url("https://fonts.googleapis.com/css?family=Lato|Oswald:200|Roboto:300,400,700");
+@import url("https://fonts.googleapis.com/css?family=Lato:300,400|Raleway:400,700|Roboto:300,400,700");
 html {
   line-height: 1.15;
   /* 1 */
@@ -395,6 +395,15 @@ body {
   font-family: "Roboto", "arial", sans-serif;
   color: #ffffff;
   font-size: 18px; }
+  body p {
+    font-family: "Lato", "arial", sans-serif;
+    font-weight: 300;
+    opacity: .9; }
+
+.full-container {
+  max-width: 1920px;
+  margin-right: auto;
+  margin-left: auto; }
 
 .header-container {
   background-image: url("/images/header.jpg");
@@ -413,18 +422,8 @@ body {
   .button:hover {
     background-color: #ffffff;
     color: #25365d;
-    cursor: pointer; }
-
-@media (max-width: 768px) {
-  .header-container {
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 1000px;
-    background-position: center; }
-  #header {
-    display: none; }
-  .download {
-    margin-top: 50px; } }
+    cursor: pointer;
+    border: 1px solid #25365d; }
 
 #header {
   margin: 0 5em; }
@@ -444,6 +443,10 @@ body {
     border: 1px solid #f7f9fb;
     padding: .6em;
     border-radius: 36px; }
+    .navigation-items .active:hover {
+      color: #25365d;
+      border-color: #25365d;
+      cursor: pointer; }
 
 .welcome {
   display: flex;
@@ -517,73 +520,6 @@ body {
     max-height: auto;
     max-width: 100%;
     background-position: center; }
-
-@media (max-width: 968px) {
-  .download-wrap {
-    position: absolute;
-    display: flex;
-    justify-content: space-between;
-    top: 2em;
-    padding: 0 1em; }
-  .big-desc {
-    font-size: 4.5em;
-    font-weight: 700;
-    margin-left: 0.5em;
-    padding-top: 10px; }
-  .image-laptop {
-    overflow: hidden; }
-    .image-laptop img {
-      max-height: 100%;
-      max-width: auto;
-      padding-top: 0.3em;
-      background-size: cover; }
-  .wrap-desc {
-    font-size: 17px;
-    padding: 0;
-    max-width: 40%;
-    margin-left: 2em; } }
-
-@media (max-width: 768px) {
-  .download-wrap {
-    position: absolute;
-    display: flex;
-    justify-content: space-between;
-    top: 2em;
-    padding: 0 1em; }
-  .big-desc {
-    font-size: 3.7em;
-    font-weight: 700;
-    margin-left: 0.5em; }
-  .image-laptop {
-    overflow: hidden; }
-    .image-laptop img {
-      max-height: 100%;
-      max-width: auto;
-      padding-top: 0.3em;
-      background-size: cover; }
-  .wrap-desc {
-    padding: 0;
-    max-width: 40%;
-    margin-left: 1em;
-    font-size: 15px; } }
-
-@media (max-width: 578px) {
-  .download-wrap {
-    position: absolute;
-    display: block;
-    justify-content: space-between;
-    top: 0.6em;
-    padding: 0 1em; }
-  .wrap-desc {
-    padding: 0;
-    max-width: 95%;
-    font-size: 17px; }
-  .image-laptop {
-    display: none; }
-  .big-desc {
-    font-size: 2.4em;
-    font-weight: 700;
-    margin-left: 0.5em; } }
 
 .info {
   background-color: #f7f9fb;
@@ -687,7 +623,21 @@ body {
   .plans-items .item {
     background-color: #ffffff;
     padding: 0 2em 1em 2em;
-    text-align: center; }
+    text-align: center;
+    transform: scale(0.94);
+    -webkit-box-shadow: 0px 2px 42px 0px rgba(37, 54, 93, 0.47);
+    -moz-box-shadow: 0px 2px 42px 0px rgba(37, 54, 93, 0.47);
+    box-shadow: 0px 2px 42px 0px rgba(37, 54, 93, 0.47); }
+    .plans-items .item:nth-child(2) {
+      transform: scale(0.97); }
+    .plans-items .item:last-child {
+      transform: scale(1); }
+    .plans-items .item:hover {
+      -webkit-box-shadow: 0px 6px 42px 0px rgba(37, 54, 93, 0.66);
+      -moz-box-shadow: 0px 6px 42px 0px rgba(37, 54, 93, 0.66);
+      box-shadow: 0px 6px 42px 0px rgba(37, 54, 93, 0.66);
+      transform: scale(1.1);
+      cursor: pointer; }
     .plans-items .item span {
       color: #25365d;
       font-size: 2em;
@@ -745,7 +695,9 @@ body {
     border-radius: 0.5em; }
   .contact-form label {
     display: block;
-    padding: .2em; }
+    padding: 0.2em;
+    font-family: "Lato", "arial", sans-serif;
+    font-weight: 300; }
   .contact-form textarea {
     height: 7em;
     width: 100%;
@@ -757,3 +709,89 @@ body {
     height: 3em;
     width: 30%;
     border-radius: 36px; }
+
+@media (max-width: 986px) {
+  .welcome {
+    padding: 1em; }
+  .download-wrap {
+    padding: 0 1em; }
+  .big-desc {
+    font-size: 4.4em;
+    top: 5em;
+    padding-top: 0.50em; }
+  .image-laptop {
+    margin-top: 4em; } }
+
+@media (max-width: 768px) {
+  body {
+    font-size: 15px; }
+  .welcome-header {
+    padding-top: 2em; }
+  .header-container {
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 880px;
+    background-position: center; }
+  #header {
+    display: none; }
+  .download-wrap {
+    padding: 1em;
+    font-size: 0.8em; }
+  .wrap-desc {
+    margin-left: .4em; }
+  .big-desc {
+    top: 1em;
+    margin-left: 0.1em; }
+  .image-laptop {
+    margin-top: 1.3em;
+    max-width: 400px; } }
+
+@media (max-width: 568px) {
+  body {
+    font-size: 13px; }
+  .welcome-header {
+    padding-top: 2em; }
+  .big-desc {
+    font-size: 3.4em;
+    top: 5em;
+    padding-top: 1em; }
+  .image-laptop {
+    display: none; }
+  .wrap-desc {
+    font-size: 1.5em;
+    max-width: 80%;
+    padding: 0 1em; }
+  .feature-wrap {
+    padding: 0.3em; }
+  .info {
+    background-color: #f7f9fb;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr 2fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    padding: 1em;
+    grid-gap: .4em;
+    font-size: .8em;
+    font-weight: 300; }
+  .plans-items .item {
+    padding: 0; }
+  .plans-contact {
+    flex-direction: column; }
+  .contact {
+    height: 750px; }
+  .contact-header {
+    height: 100px; }
+  .feature-wrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr minmax(100px 200px) 1fr;
+    padding: 1em; }
+  .item2 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 3; }
+  .item3 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3; } }

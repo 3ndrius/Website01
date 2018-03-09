@@ -3,6 +3,16 @@ body{
     font-family: $main-font-family;
     color:$font-color;
     font-size:$myf-size;
+    p{
+        font-family:$second-ff;
+        font-weight:$second-fw;
+        opacity: .9;
+    }
+}
+.full-container{
+    max-width: 1920px;
+    margin-right: auto;
+    margin-left: auto;
 }
 .header-container{
     background-image: url('/images/header.jpg');
@@ -20,39 +30,16 @@ body{
     border-radius:36px;
     border:none;
     color:$font-color;
+    
 
    &:hover{
     background-color: $font-color;
     color:$btn-color;
     cursor:pointer;
+    border:1px solid $btn-color;
    }
 }
 
 
-@media (max-width: 768px) {
-    
-    
-    .header-container{
-       
-        background-size:cover;
-        background-repeat: no-repeat;
-        height:1000px;
-        background-position: center;
-        
-        
-    }
-    #header{
-        display: none;
-    }
-    .download{
-        margin-top:50px
-    }
-}
 
-@media (max-width: 578px) {
-    .header-container{
-   
-        
-    }
 
-}

@@ -1,67 +1,63 @@
-.contact{
-    height: 800px;
-    color:$btn-color;
-    h1{
-        text-align: center;
-        padding: 1em;
-    }
+.contact {
+  height: 800px;
+  color: $btn-color;
+  h1 {
+    text-align: center;
+    padding: 1em;
+  }
 }
-.contact-header{
-    height: 150px;
+.contact-header {
+  height: 150px;
 }
-.contact-wrap{
-    background-image: url('/images/footer1.jpg');
-    background-repeat: no-repeat;
-    background-size:cover;
-    height: 650px;
+.contact-wrap {
+  background-image: url("/images/footer1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 650px;
+  width: 100%;
+  background-position: center;
+}
+
+.form-wrap {
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: auto;
+  padding-left: auto;
+
+  width: 60%;
+}
+
+.contact-form {
+  height: 100%;
+  width: 100%;
+  opacity: 0.9;
+
+  input {
     width: 100%;
-    background-position: center;
-
-  
-}
-
-.form-wrap{
-    margin-left: auto;
-    margin-right: auto;
-    padding-right: auto;
-    padding-left: auto;
+    height: 2em;
+    display: block;
+    margin-bottom: 1em;
+    border: 1px solid $btn-color;
+    border-radius: 0.5em;
+  }
+  label {
+    display: block;
+    padding: 0.2em;
+    font-family:$second-ff;
+    font-weight: $second-fw
     
-    width: 60%;
-  
-}
-   
-.contact-form{
-    height: 100%;
+  }
+  textarea {
+    height: 7em;
     width: 100%;
-    opacity: 0.9;
-   
-
-   
-    input{
-       width: 100%;
-        height: 2em;
-        display:block;
-        margin-bottom: 1em;
-        border: 1px solid $btn-color;
-        border-radius: 0.5em;
-        
-    }
-    label{
-        display: block;
-        padding: .2em;
-    }
-    textarea{
-        height: 7em;
-        width: 100%;
-        margin-bottom: 1em;
-        border: 1px solid $btn-color;
-        border-radius: 0.5em;
-    }
-    .button{
-        padding: 1em;
-        height: 3em;
-        width: 30%;
-        border-radius: 36px;
-    }
-    
+    margin-bottom: 1em;
+    border: 1px solid $btn-color;
+    border-radius: 0.5em;
+  }
+  .button {
+    padding: 1em;
+    height: 3em;
+    width: 30%;
+    border-radius: 36px;
+  }
 }
