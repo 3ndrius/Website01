@@ -431,6 +431,10 @@ body {
     cursor: pointer;
     border: 1px solid #25365d; }
 
+.menu {
+  position: relative;
+  display: none; }
+
 #header {
   margin: 0 5em; }
 
@@ -733,8 +737,6 @@ body {
 @media (max-width: 768px) {
   body {
     font-size: 15px; }
-  .menu-hamburger {
-    display: block; }
   .welcome-header {
     padding-top: 2em; }
   .header-container {
@@ -811,8 +813,7 @@ body {
     width: 100%;
     background-color: #1baec2;
     z-index: 1001;
-    padding: 10em;
-    display: none; } }
+    padding: 20%; } }
 
 @media (max-width: 568px) {
   body {

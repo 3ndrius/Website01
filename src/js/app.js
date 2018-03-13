@@ -1,26 +1,53 @@
 var button = document.querySelector('.menu-hamburger');
 var page = document.querySelector('.full-container');
 var menu = document.querySelector('.menu');
+var itemMenu = document.querySelectorAll('.itemsMenu');
 
 button.addEventListener('blur', function() {
 
-    if(menu.style.display == 'none') {
-        menu.style.display="block";
-    }
-    else {
+    if(menu.style.display == 'block') {
         menu.style.display="none";
+        
     }
+   
 });
   
-button.addEventListener('focus', function() {
+button.addEventListener('click', function() {
 
     if(menu.style.display == 'block') {
         menu.style.display="none";
+        button.blur();
+        
     }
     else {
         menu.style.display="block";
     }
+
+
+
+    
 });
 
 
 
+
+//
+//test// button.addEventListener('click', function() {
+
+//     if(menu.style.display == 'block') {
+//         menu.style.display="none";
+//         btn.classList.remove('change');
+       
+        
+      
+//     }
+//     else {
+//         menu.style.display="block";
+//         btn.classList.add('change');
+        
+//     }
+
+
+
+    
+// });
