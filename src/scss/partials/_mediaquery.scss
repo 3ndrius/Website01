@@ -130,10 +130,21 @@
     background-color: rgb(27, 174, 194);
     z-index: 1001;
     padding: 20%;
-  
+    .itemsMenu{
+        transition: all  .7s ease-in-out;
+        cursor: pointer;
+        
+    }
+    .itemsMenu:hover{
+        color:$btn-color;
+       
+        transform: translateX(10px);
+       
+    }
    
 
   }
+ 
   // end of hamburger menu
 }
 

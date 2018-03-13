@@ -813,7 +813,13 @@ body {
     width: 100%;
     background-color: #1baec2;
     z-index: 1001;
-    padding: 20%; } }
+    padding: 20%; }
+    .menu .itemsMenu {
+      transition: all  .7s ease-in-out;
+      cursor: pointer; }
+    .menu .itemsMenu:hover {
+      color: #25365d;
+      transform: translateX(10px); } }
 
 @media (max-width: 568px) {
   body {
