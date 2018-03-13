@@ -407,7 +407,8 @@ body {
 .full-container {
   max-width: 1920px;
   margin-right: auto;
-  margin-left: auto; }
+  margin-left: auto;
+  display: block; }
 
 .header-container {
   background-image: url("/images/header.jpg");
@@ -432,12 +433,11 @@ body {
 
 .menu-hamburger {
   position: absolute;
-  top: 20px;
+  top: 25px;
   left: 25px;
-  height: 40px;
+  height: 28px;
   width: 40px;
-  z-index: 100;
-  display: none; }
+  z-index: 1002; }
   .menu-hamburger .hamburger-wrap {
     position: relative; }
     .menu-hamburger .hamburger-wrap .line {
@@ -463,6 +463,27 @@ body {
         height: 0.25em;
         width: 100%;
         background-color: #ffffff; }
+
+.menu-hamburger:focus {
+  cursor: pointer; }
+  .menu-hamburger:focus .line {
+    transform: rotate(45deg);
+    margin-top: 10px;
+    transition: 0.5s; }
+    .menu-hamburger:focus .line::before {
+      transform: rotate(-90deg) translate(10px, 0px);
+      transition: 0.5s; }
+    .menu-hamburger:focus .line::after {
+      display: none; }
+
+.menu {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background-color: #1baec2;
+  z-index: 1001;
+  padding: 10em;
+  display: none; }
 
 #header {
   margin: 0 5em; }

@@ -1,6 +1,15 @@
-var button = document.querySelector(.menu-hamburger);
+var button = document.querySelector('.hamburger-wrap');
+var page = document.querySelector('.full-container');
+var menu = document.querySelector('.menu');
 
-button.addEventListener('click', function() {
+
+button.focus();
+    
 
 
-});
+button.blur(menu.style.display="none");
+  
+   
+
+
+
