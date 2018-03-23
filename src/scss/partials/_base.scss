@@ -3,6 +3,8 @@ body{
     font-family: $main-font-family;
     color:$font-color;
     font-size:$myf-size;
+    background-image: url('/images/t-o.jpg');
+    background-size:cover;
     p{
         font-family:$second-ff;
         font-weight:$second-fw;
@@ -22,6 +24,17 @@ body{
     margin-left: auto;
     display: block;
     
+}
+.deep-background{
+    height:90%;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    //
+    // background-image: url('/images/header.jpg');
+    // background-size:cover;
 }
 .header-container{
     background-image: url('/images/header.jpg');
