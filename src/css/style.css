@@ -396,7 +396,9 @@ body {
   color: #ffffff;
   font-size: 18px;
   background-image: url("/images/t-o.jpg");
-  background-size: cover; }
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; }
   body p {
     font-family: "Lato", "arial", sans-serif;
     font-weight: 300;
@@ -413,7 +415,7 @@ body {
   display: block; }
 
 .deep-background {
-  height: 90%;
+  height: 100%;
   width: 90%;
   margin-left: auto;
   margin-right: auto;
