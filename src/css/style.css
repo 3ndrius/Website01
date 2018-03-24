@@ -472,7 +472,7 @@ body {
   align-items: center;
   justify-content: flex-start;
   flex-direction: column;
-  padding: 2em;
+  padding: 5em;
   height: 660px; }
   .welcome .welcome-header {
     text-transform: uppercase;
@@ -719,11 +719,11 @@ body {
     font-family: "Lato", "arial", sans-serif;
     font-weight: 300; }
   .contact-form textarea {
-    height: 7em;
+    height: 12em;
     width: 100%;
     margin-bottom: 1em;
     border: 1px solid #25365d;
-    border-radius: 0.5em; }
+    border-radius: 0.65em; }
   .contact-form .button {
     padding: 1em;
     height: 3em;
@@ -732,7 +732,7 @@ body {
 
 @media (max-width: 986px) {
   .welcome {
-    padding: 1em; }
+    padding: 2em; }
   .download-wrap {
     padding: 0 1em; }
   .big-desc {
@@ -744,7 +744,7 @@ body {
 
 @media (max-width: 768px) {
   body {
-    font-size: 15px; }
+    font-size: 17px; }
   .welcome-header {
     padding-top: 2em; }
   .header-container {
