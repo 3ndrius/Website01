@@ -394,11 +394,7 @@ body {
   font-weight: 400;
   font-family: "Roboto", "arial", sans-serif;
   color: #ffffff;
-  font-size: 18px;
-  background-image: url("/images/t-o.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center; }
+  font-size: 18px; }
   body p {
     font-family: "Lato", "arial", sans-serif;
     font-weight: 300;
