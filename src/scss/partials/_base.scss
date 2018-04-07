@@ -1,69 +1,59 @@
-body{
-    font-weight: $main-font-weight;
-    font-family: $main-font-family;
-    color:$font-color;
-    font-size:$myf-size;
- 
-    p{
-        font-family:$second-ff;
-        font-weight:$second-fw;
-        opacity: .9;
-        line-height: $line-heigh;
-        
-    }
-    h1{
-        font-family: $special-ff;
-        text-transform: uppercase;
-        
-    }
+body {
+  font-weight: $main-font-weight;
+  font-family: $main-font-family;
+  color: $font-color;
+  font-size: $myf-size;
+
+  p {
+    font-family: $second-ff;
+    font-weight: $second-fw;
+    opacity: 0.9;
+    line-height: $line-heigh;
+  }
+  h1 {
+    font-family: $special-ff;
+    text-transform: uppercase;
+  }
 }
-.full-container{
-    max-width: 1920px;
-    margin-right: auto;
-    margin-left: auto;
-    display: block;
-    
+.full-container {
+  max-width: 1920px;
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
 }
-.deep-background{
-    height:100%;
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    
+.deep-background {
+  height: 100%;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
-.header-container{
-    background-image: url('/images/header.jpg');
-    background-size:cover;
-    background-repeat: no-repeat;
-    height:1200px;
-    background-position: center;
-    margin-bottom: 100px;
-    
+.header-container {
+  background-image: url("/images/header.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 1200px;
+  background-position: center;
+  margin-bottom: 100px;
 }
 
-.button{
-    padding:.6em 1.2em;
-    background-color: $btn-color;
-    border-radius:36px;
-    border:1px solid $btn-color;
-    color:$font-color;
-    transition:all ease 0.8s;
-    
+.button {
+  padding: 0.6em 1.2em;
+  background-color: $btn-color;
+  border-radius: 36px;
+  border: 1px solid $btn-color;
+  color: $font-color;
+  transition: all ease 0.8s;
 
-   &:hover{
+  &:hover {
     background-color: $font-color;
-    color:$btn-color;
-    cursor:pointer;
-    border:1px solid $btn-color;
-   }
-
+    color: $btn-color;
+    cursor: pointer;
+    border: 1px solid $btn-color;
+  }
 }
-.menu{
-    position: relative;
-    display:none;
-    
-  
+.menu {
+  position: relative;
+  display: none;
 }
-

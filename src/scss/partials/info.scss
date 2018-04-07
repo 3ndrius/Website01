@@ -1,35 +1,32 @@
-.info{
-    background-color: $bg-section-color;
-    display: grid;
-    grid-template-columns:1fr 2fr 1fr 2fr 1fr 2fr;
-    grid-template-rows: 1fr 1fr;
-    padding: 4em;
-    grid-gap: .4em;
-    font-size: .8em;
-    font-weight: $second-fw;
-    
-    i{
-        color:$btn-color;
-        opacity: 0.9;
-    }
+.info {
+  background-color: $bg-section-color;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr 2fr 1fr 2fr;
+  grid-template-rows: 1fr 1fr;
+  padding: 4em;
+  grid-gap: 0.4em;
+  font-size: 0.8em;
+  font-weight: $second-fw;
+
+  i {
+    color: $btn-color;
+    opacity: 0.9;
+  }
 }
 .item {
-   
-    h2{
-        color:$btn-color;
-        text-transform: uppercase;
-        padding-top: 0;
-        margin-top: 0;
-        font-weight:$main-font-weight;
-        opacity: 0.98;
-    }
-    p{
-        color:$second-font-color;
-        opacity: 0.8;
-    }
-    
+  h2 {
+    color: $btn-color;
+    text-transform: uppercase;
+    padding-top: 0;
+    margin-top: 0;
+    font-weight: $main-font-weight;
+    opacity: 0.98;
+  }
+  p {
+    color: $second-font-color;
+    opacity: 0.8;
+  }
 }
-.item-image{
-   
-    text-align: center;
+.item-image {
+  text-align: center;
 }
