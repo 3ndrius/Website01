@@ -1,25 +1,279 @@
-# Sass Starter Pack
+<!DOCTYPE html>
+<html class="no-js" lang="en">
 
-A light package for compiling Sass and running a dev server
+<head>
+  <meta author="AOPROGRAMER| aoprogramer@wp.pl">
+  <title>Mountain Pge</title>
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-### Version
-1.0.0
+</head>
 
-## Usage
+<body>
+  <div class="menu">
+    <h1 class="itemsMenu">Home</h1>
+    <h1 class="itemsMenu">Plans</h1>
+    <h1 class="itemsMenu">Download</h1>
+    <h1 class="itemsMenu">Features</h1>
+    <h1 class="itemsMenu">Contact</h1>
+  </div>
+
+  <div class="full-container">
 
 
-### Installation
 
-Install the dependencies (gulp, gulp-sass, browser-sync)
+    <div class="menu-hamburger" id="myfocusablediv" tabindex="-1">
+      <div class="hamburger-wrap">
+        <div class="line"></div>
+      </div>
 
-```sh
-$ npm install
-```
+      <!--test <div class="hamburger-wrap">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div> -->
 
-### Run
+    </div>
 
-This will watch your sass files, compile them and run your dev server at http://localhost:3000
+    <div class="header-container">
+      <section id="header">
 
-```sh
-$ npm start
-```
+        <nav class="header-navbar">
+
+          <a href="/">
+            <img src="/images/logo-kopia.png" alt="Nav page logo" class="logo">
+          </a>
+
+
+          <ul class="navigation-items">
+            <li class="active">Start</li>
+            <li>Downloads</li>
+            <li>Plans</li>
+            <li>Contact</li>
+            <li>
+              <i class="fa fa-search" aria-hidden="true"></i>
+            </li>
+          </ul>
+
+        </nav>
+      </section>
+      <section class="welcome">
+        <h1 class="welcome-header">Free and cool web template</h1>
+        <p class="welcome-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Volitiis illum aliquid soluta quibusdam, iure praesentium
+          odit doloremque sapiente quisquam.</p>
+
+        <button class="button welcome-btn">
+          <i class="fa fa-download" aria-hidden="true"></i>Download</button>
+
+      </section>
+
+      <section class="download">
+        <div class="big-desc">
+          FREE RESOURCES
+        </div>
+        <div class="download-wrap">
+
+          <div class="wrap-desc">
+            <h1 class="download-h1">JUST DOWNLOAD IT</h1>
+            <p class="download-p">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque aliquid iste velit quidem enim odit accusamus
+              similique recusandae ad veniam, eveniet amet non eius. Eligendi ad perspiciatis repudiandae ea ullam! </p>
+            <ul class="download-list">
+              <li>
+                <i class="fa fa-check-circle-o" aria-hidden="true"></i> Items</li>
+              <li>
+                <i class="fa fa-check-circle-o" aria-hidden="true"></i> Products</li>
+            </ul>
+            <button class="button">
+              Read more
+            </button>
+
+          </div>
+          <div class="image-laptop">
+            <img src="/images/macbook.png" alt="laptop-icon-download">
+
+          </div>
+
+
+        </div>
+      </section>
+
+    </div>
+
+    <div class="info">
+      <div class="item-image">
+        <i class="fa fa-desktop fa-3x" aria-hidden="true"></i>
+      </div>
+      <div class="item">
+        <h2>
+          high resolution
+        </h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, impedit.
+        </p>
+      </div>
+      <div class="item-image">
+        <i class="fa fa-camera fa-3x" aria-hidden="true"></i>
+      </div>
+      <div class="item">
+        <h2>
+          photography
+        </h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, impedit.
+        </p>
+      </div>
+      <div class="item-image">
+        <i class="fa fa-files-o fa-3x" aria-hidden="true"></i>
+      </div>
+      <div class="item">
+        <h2>
+          editable layers
+        </h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, impedit.
+        </p>
+      </div>
+      <div class="item-image">
+        <i class="fa fa-mobile fa-3x" aria-hidden="true"></i>
+      </div>
+      <div class="item">
+        <h2>
+          24/7 support
+        </h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, impedit.
+        </p>
+      </div>
+      <div class="item-image">
+        <i class="fa fa-magic fa-3x" aria-hidden="true"></i>
+      </div>
+      <div class="item">
+        <h2>
+          powerfull theme
+        </h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, impedit.
+        </p>
+      </div>
+      <div class="item-image">
+        <i class="fa fa-cogs fa-3x" aria-hidden="true"></i>
+      </div>
+      <div class="item">
+        <h2>
+          ttv
+        </h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, impedit.
+        </p>
+      </div>
+    </div>
+
+    <section class="feature">
+      <div class="feature-header">
+        <h1>Check our features</h1>
+      </div>
+
+      <div class="feature-wrap">
+        <div class="item-desc item1">
+          <h3>Feature1</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicumque reiciendis.</p>
+        </div>
+        <div class="item2">
+          <img src="/images/macbook-1.png" alt="half-laptop-img-color">
+        </div>
+        <div class="item3">
+          <img src="/images/macbook-2.png" alt="half-laptop-img-no-color">
+        </div>
+        <div class="item-desc item4">
+          <h3>Feature2</h3>
+          <p>Lorem ipsum dolor sit amet consectetuquatur fugit tempora exercitationem.</p>
+        </div>
+        <div class="item-desc item5">
+          <h3>Feature3</h3>
+          <p>Lorem ipsum dolor sit amet consectetur ad ducimus assumenda sunt.</p>
+        </div>
+        <div class="item-desc item6">
+          <h3>Feature4</h3>
+          <p>Lorem ipsum, dolor sit amet consectetur as cum dicta eaque ad?</p>
+        </div>
+
+      </div>
+
+    </section>
+
+    <section class="plans">
+      <div class="plans-header">
+        <h1>
+          Plans
+        </h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium expedita et quasi iure nesciunt eveniet velit
+          neque debitis quia magnam.</p>
+      </div>
+      <div class="plans-items">
+        <div class="item">
+          <h4>Basic plan</h4>
+
+          <span>$25</span>/mon
+          <p>Lorem, ipsum dolor.</p>
+        </div>
+        <div class="item">
+          <h4>Professional plan</h4>
+
+          <span>$50</span>/mon
+          <p>Lorem, ipsum dolor.</p>
+        </div>
+        <div class="item">
+          <h4>Exclusive plan</h4>
+
+          <span>$75</span>/mon
+          <p>Lorem, ipsum dolor.</p>
+        </div>
+      </div>
+      <div class="plans-footer">
+        <h2>
+          <i class="fa fa-headphones fa-2x" aria-hidden="true"></i>
+        </h2>
+        <h4>Questions?</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis molestias odio voluptatibus quia excepturi, modi molestiae
+          amet ex doloremque magnam?</p>
+      </div>
+      <div class="plans-contact">
+        <h3>
+          <i class="fa fa-envelope" aria-hidden="true"></i> support@free.com</h3>
+        <h3>
+          <i class="fa fa-phone" aria-hidden="true"></i>+48 504 176 933</h3>
+      </div>
+
+    </section>
+
+    <section class="contact">
+
+      <div class="contact-header">
+        <h1>Contact Us</h1>
+      </div>
+      <div class="contact-wrap">
+        <div class="form-wrap">
+          <form action="" class="contact-form">
+            <label for="name">Name</label>
+            <input type="text" id="name">
+            <label for="email">Email</label>
+            <input type="emal" id="email">
+            <label for="message">Message</label>
+            <textarea name="message" id="message"></textarea>
+            <input type="submit" value="Send" class="button">
+          </form>
+        </div>
+      </div>
+    </section>
+
+
+  </div>
+
+
+  <script src="/js/app.js"></script>
+</body>
+
+
+</html>
