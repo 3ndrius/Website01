@@ -7,7 +7,6 @@ button.addEventListener("blur", function() {
     menu.style.display = "none";
   }
 });
-
 button.addEventListener("click", function() {
   if (menu.style.display == "block") {
     menu.style.display = "none";
@@ -16,7 +15,6 @@ button.addEventListener("click", function() {
     menu.style.display = "block";
   }
 });
-
 //
 //test// button.addEventListener('click', function() {
 
